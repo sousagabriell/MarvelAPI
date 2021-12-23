@@ -1,0 +1,19 @@
+<h3 class="mt-3 text-center"> Personagens </h3>
+<div class="row">
+    <div class="col-md-2 mt-5 text-center" ng-repeat="superhero in listResultCtrl.superheroes" >
+       
+                <img ng-src="{{superhero.thumbnail.path}}.{{superhero.thumbnail.extension}}" class="img-thumbnail" width="200px" h >
+                    <h1>{{superhero.name}}</h1>
+                    <button type="button" class="btn btn-success"
+                    ui-sref="marvel.superhero({idhero:superhero.id})" data-id="{{superhero.id}}">
+                        Ver Mais
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+<hr/>
+
+<paginator pages="listResultCtrl.offset" limit="listResultCtrl.limit" total="listResultCtrl.total"
+ng-if="listResultCtrl.total>0"
+></paginator>

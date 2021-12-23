@@ -1,0 +1,17 @@
+<div class="accordion accordion-flush " id="accordionFlushExample">
+    <div class="accordion-item nav-fix bg-nav">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed bg-nav " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Pesquisar Personagem
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+            <input type="text" class="form-control w-100" id="superHeroSerach" ng-model="searchCtrl.value" placeholder="Digite um personagem">
+            <div class="col-sm-2">
+                <button class="btn btn-success mt-3 w-100" ng-click="searchCtrl.search()">
+               Pesquisar
+            </button></div>
+          </div>
+        </div>
+    </div>
